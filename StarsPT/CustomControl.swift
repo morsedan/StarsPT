@@ -26,7 +26,6 @@ class CustomControl: UIControl {
         let space: CGFloat = 8.0
         
         var workingX: CGFloat = space
-//        var workingY: CGFloat = 0
         var tagNumber = 1
         
         for _ in 1...componentCount {

@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.title = "User Rating: 1 star"
     }
 
     @IBAction func updateRating(_ ratingControl: CustomControl) {
-        // FIXME: "star" not "stars" for 1
-        self.title = "User Rating: \(ratingControl.value) stars"
+        if ratingControl.value == 1 {
+            self.title = "User Rating: \(ratingControl.value) star"
+        } else {
+            self.title = "User Rating: \(ratingControl.value) stars"
+        }
     }
-    
 }
